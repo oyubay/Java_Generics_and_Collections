@@ -1,3 +1,6 @@
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Task {
   public static void main(String[] args){
       String text = "It would be nice if we could write a single sort method that could sort the elements in an Integer array, a String array, or an array of any type that supports ordering. "+
@@ -11,6 +14,9 @@ public class Task {
 
       /* TODO
 Create a counter of String objects called words., and make it work for the words in the String text above. That way, the rest will compile. */
+      String [] txt = text.split(" ");
+      System.out.println(Arrays.toString(txt));
+      Counter<String> words = new Counter<>(txt);
       System.out.println("Most frequent word:"+words.mostFrequent());
       System.out.println("With "+words.getCount(words.mostFrequent())+" occurrences");
       System.out.println("The word sort appears "+words.getCount("sort")+" times");

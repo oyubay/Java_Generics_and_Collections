@@ -39,12 +39,8 @@ REMOVES the card from the deck */
     }
     @Override
     public Iterator<Card> iterator() {
-        Deck newD = new Deck();
-        DeckIterator iter = new DeckIterator(newD);
-
-        return iter;
-
-
+        DeckIterator d1 = new DeckIterator<Card>(this);
+        return d1;
        /* TODO
 Return a new DeckIterator with this instance in the constructor.*/
     }

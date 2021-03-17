@@ -4,7 +4,7 @@ public class DeckIterator<E> implements Iterator<E> /* TODO
 Implement the Iterator interface */ {
     Deck d;
     public DeckIterator(Deck d){
-        this.d = new Deck();
+        this.d = (Deck) d;
 /* TODO
 initialize the variable d */
     }

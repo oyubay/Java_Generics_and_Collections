@@ -14,7 +14,7 @@ files:
       offset: 510
     initialized_from_dependency: false
     selected: true
-    status: Failed
+    status: Solved
     encrypted_possible_answer: |-
       c : d)
                   System.out.print(c+", ");
@@ -27,7 +27,7 @@ files:
       offset: 640
     initialized_from_dependency: false
     selected: false
-    status: Failed
+    status: Solved
     encrypted_possible_answer: |2-
              int sum = 0;
               for(Card c:hand){
@@ -148,7 +148,7 @@ files:
       offset: 66
     initialized_from_dependency: false
     selected: false
-    status: Failed
+    status: Solved
     encrypted_possible_answer: |2-
           public Card(V value, S suit){
               this.value = value;
@@ -194,7 +194,7 @@ files:
       offset: 243
     initialized_from_dependency: false
     selected: false
-    status: Failed
+    status: Solved
     encrypted_possible_answer: |2
               this.deck=new LinkedList<Card>();
               for (String suit : suits) {
@@ -216,7 +216,7 @@ files:
       offset: 421
     initialized_from_dependency: false
     selected: false
-    status: Failed
+    status: Solved
     encrypted_possible_answer: |2-
               int idx = (int)Math.round(Math.random()*(deck.size()-1));
               if (deck.size()>0)
@@ -232,11 +232,11 @@ files:
       offset: 628
     initialized_from_dependency: false
     selected: false
-    status: Failed
+    status: Solved
     encrypted_possible_answer: |2-
 
               return this.deck.size();
-  - offset: 1500
+  - offset: 1467
     length: 74
     placeholder_text: "/* TODO \nReturn a new DeckIterator with this instance in the\
       \ constructor.*/"
@@ -245,7 +245,7 @@ files:
       offset: 762
     initialized_from_dependency: false
     selected: true
-    status: Failed
+    status: Solved
     encrypted_possible_answer: ' return new DeckIterator<Card>(this);'
   text: "import java.util.Iterator;\nimport java.util.LinkedList;\nimport java.util.List;\n\
     \npublic class Deck implements Iterable<Card>{\n    private List<Card> deck;\n\
@@ -273,9 +273,9 @@ files:
       offset: 57
     initialized_from_dependency: false
     selected: true
-    status: Failed
+    status: Solved
     encrypted_possible_answer: implements Iterator<E>
-  - offset: 200
+  - offset: 198
     length: 36
     placeholder_text: |-
       /* TODO
@@ -285,9 +285,9 @@ files:
       offset: 148
     initialized_from_dependency: false
     selected: false
-    status: Failed
+    status: Solved
     encrypted_possible_answer: '        this.d = d;'
-  - offset: 324
+  - offset: 322
     length: 62
     placeholder_text: |-
       /* TODO
@@ -297,9 +297,9 @@ files:
       offset: 244
     initialized_from_dependency: false
     selected: false
-    status: Failed
+    status: Solved
     encrypted_possible_answer: ' return d.size()>0;'
-  - offset: 471
+  - offset: 469
     length: 37
     placeholder_text: |-
       /* TODO
@@ -309,7 +309,7 @@ files:
       offset: 357
     initialized_from_dependency: false
     selected: false
-    status: Failed
+    status: Solved
     encrypted_possible_answer: return (E) this.d.dealCard();
   text: |
     import java.util.Iterator;
@@ -335,10 +335,8 @@ files:
         }
     }
   learner_created: false
-status: Failed
+status: Solved
 feedback:
-  message: Is your iterator method returning an iterator over the deck?
-  time: Tue, 16 Mar 2021 21:13:56 UTC
-  expected: Deck@26648b52
-  actual: Deck@50ae090e
+  message: Congratulations!
+  time: Tue, 16 Mar 2021 21:50:05 UTC
 record: -1
